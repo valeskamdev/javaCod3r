@@ -20,7 +20,7 @@ public class Data {
     }
 
     String obterDataFormatada() {
-        final String formato = "%d/%d/%d";  // variavel local, criada dentro do escopo do método
+        final String formato = "%d/%d/%d";  // variavel local, criada dentro do escopo do método (SEMPRE INICIALIZADA)
         return String.format(formato, this.dia, mes, ano);
     }
 }
