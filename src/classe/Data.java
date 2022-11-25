@@ -10,7 +10,7 @@ public class Data {
 //      dia = 2;
 //      mes = 5;
 //      ano = 2003;
-        this(2, 5, 2003);  // this como método, chamando outro construtor (USADO SOMENTE NO CONSTRUTOR)
+        this(2, 5, 2003);  // this como método, chamando construtor abaixo (USADO SOMENTE NO CONSTRUTOR)
     }
 
     Data(int dia, int mes, int ano) {
@@ -20,6 +20,7 @@ public class Data {
     }
 
     String obterDataFormatada() {
-        return String.format("%d/%d/%d", this.dia, mes, ano);
+        final String formato = "%d/%d/%d";  // variavel local, criada dentro do escopo do método
+        return String.format(formato, this.dia, mes, ano);
     }
 }
