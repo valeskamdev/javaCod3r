@@ -6,6 +6,11 @@ public class Jogador {
     int posicaoX;
     int posicaoY;
 
+    public Jogador(int posicaoX, int posicaoY) {
+        this.posicaoX = posicaoX;
+        this.posicaoY = posicaoY;
+    }
+
     boolean atacar(Jogador oponente) {
 
         int deltaX = Math.abs(posicaoX - oponente.posicaoX);

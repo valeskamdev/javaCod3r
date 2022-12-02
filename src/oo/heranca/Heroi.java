@@ -2,6 +2,10 @@ package oo.heranca;
 
 public class Heroi extends Jogador {
 
+    Heroi(int posicaoX, int posicaoY) {
+        super(posicaoX, posicaoY);
+    }
+
     @Override
     boolean atacar(Jogador oponente) {
         boolean ataque1 = super.atacar(oponente);

@@ -4,13 +4,10 @@ public class Jogo {
     public static void main(String[] args) {
 
         Monstro monstro = new Monstro();
-        Heroi heroi = new Heroi();
+        Heroi heroi = new Heroi(10, 11);
 
         monstro.posicaoX = 10;
         monstro.posicaoY = 10;
-
-        heroi.posicaoX = 10;
-        heroi.posicaoY = 11;
 
         System.out.println("Monstro => " + monstro.vida);
         System.out.println("Heroi => " + heroi.vida);
