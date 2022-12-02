@@ -2,11 +2,11 @@ package oo.heranca.desafio;
 
 public class Supra extends Carro{
 
-    Supra() {
+    public Supra() {
         this(315);
     }
 
-    Supra(int velocidadeMaxima) {
+    public Supra(int velocidadeMaxima) {
         super(velocidadeMaxima);
         delta = 20;
     }
