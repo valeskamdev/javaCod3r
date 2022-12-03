@@ -1,6 +1,9 @@
 package oo.heranca.desafio;
 
-public class Supra extends Carro{
+public class Supra extends Carro implements Esportivo, Luxo {
+
+    private boolean ligarTurbo = false;
+    private boolean ligarAr = false;
 
     public Supra() {
         this(315);
@@ -8,6 +11,39 @@ public class Supra extends Carro{
 
     public Supra(int velocidadeMaxima) {
         super(velocidadeMaxima);
-        delta = 20;
+        setDelta(15);
+    }
+
+    @Override
+    public void ligarTurbo() {
+        ligarTurbo = true;
+    }
+
+    @Override
+    public void desligarTurbo() {
+        ligarTurbo = false;
+    }
+
+    @Override
+    public void ligarAr() {
+        ligarAr = true;
+    }
+
+    @Override
+    public void desligarAr() {
+        ligarAr = false;
+    }
+
+    @Override
+    public int getDelta() {
+        if (ligarTurbo && !ligarAr) {
+            return 35;
+        } else if (ligarTurbo && ligarAr) {
+            return 30;
+        } else if (!ligarTurbo && ligarAr) {
+            return 20;
+        } else {
+            return 15;
+        }
     }
 }
