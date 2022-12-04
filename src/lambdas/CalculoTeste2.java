@@ -15,5 +15,8 @@ public class CalculoTeste2 {
 
         System.out.println("MULTIPLICAO:");
         System.out.println(calc.executar(2,3));
+
+        System.out.println(calc.legal());
+        System.out.println(Calculo.muitoLegal());
     }
 }
