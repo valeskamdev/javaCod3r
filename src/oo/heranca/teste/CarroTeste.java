@@ -46,5 +46,6 @@ public class CarroTeste {
 
         System.out.println("Supra => " + supra);
         System.out.println("Golf => " + golf);
+        System.out.println(supra.velocidadeDoAr());
     }
 }
